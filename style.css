@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+
+
+/* style du tableau                             */
+
+#tableau {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+}
+
+
+#tableau h2 {
+    font-size: 10px;
+}
+
+.jour {
+    width: 14%;
+}
+
+.dateJour {
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.nomJour {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.eventsJour {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 10px;
+
+    height: 675px;
+
+    background-image: linear-gradient(to right, grey 1px, transparent 1px), 
+                    linear-gradient(to bottom, grey 1px, transparent 1px);
+    background-size: 100% 50px; /* taille de la grille */
+}
+
+.event {
+    
+    border-radius: 5px;
+
+    font-size: 10px;
+
+    background: #88c1f2;
+    color: white;
+}
+.event_title {
+    font-weight: bold;
+}
+.event_location {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/*                                               */
