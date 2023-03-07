@@ -2,6 +2,60 @@ body {
     margin: 0;
 }
 
+/*  Style du header                       */
+
+header {
+    height: 10vh;
+    box-shadow:  0px 1px 8px rgb(107,107,107);
+
+    display: flex;
+    align-items: center;
+}
+
+    /* Bouton pour changer de semaine */
+
+#autreSem {
+    height: 50px;
+    width: 15%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#autreSem a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #32363d;
+    transition: background 0.5s;
+}
+
+#boutonAjd {
+    border: 1px #c0c0c2 solid;
+    padding: 5px;
+}
+
+.bF {
+    border-radius: 50%;
+    width: 1.4em;
+    height: 1.4em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#autreSem a:hover {
+    background: #ebeced;
+}
+
+
+
+#contenu {
+    display: flex;
+}
+
 
 /* style du tableau                             */
 
@@ -9,25 +63,57 @@ body {
     display: flex;
     flex-direction: row;
     text-align: justify;
+
+    padding-top: 10px;
+
+    height: 88vh;
+
+    overflow: auto;
+    stop-color-border-radius: 5px;
+
+    flex-grow: 2;
 }
 
+#tableau::-webkit-scrollbar {
+  width: 8px;
+}
+/* Ascenseur */
+#tableau::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 8px;
+}
+
+#heures {
+    position: relative;
+    width: 3%;
+}
+
+#heures p {
+    position: absolute;
+}
+
+.nomJour {
+    height: 100px;
+    text-align: center;
+}
+
+.nomJour h1 {
+    color: rgb(70, 70, 70);
+    margin: 0;
+    height: 50%;
+}
+
+.date {
+    font-size: 1.7em;
+    height: 50%;
+}
 
 #tableau h2 {
     font-size: 10px;
 }
 
 .jour {
-    width: 14%;
-}
-
-.dateJour {
-    text-align: center;
-    font-size: 1.7em;
-}
-
-.nomJour {
-    text-align: center;
-    font-size: 0.8em;
+    width: 13.8%;
 }
 
 .eventsJour {
@@ -36,15 +122,14 @@ body {
 
     padding: 0 10px;
 
-    height: 675px;
+    height: 725px;
 
-    background-image: linear-gradient(to right, grey 1px, transparent 1px), 
-                    linear-gradient(to bottom, grey 1px, transparent 1px);
+    background-image: linear-gradient(to right, #dadce0 1px, transparent 1px), 
+                    linear-gradient(to bottom, #dadce0 1px, transparent 1px);
     background-size: 100% 50px; /* taille de la grille */
 }
 
 .event {
-    
     border-radius: 5px;
 
     font-size: 10px;
@@ -60,4 +145,9 @@ body {
     font-style: italic;
 }
 
-/*                                               */
+/*  style de la partie à gauche de la page                  */
+
+#gauche {
+    width: 15%;
+    height: 100%;
+}
